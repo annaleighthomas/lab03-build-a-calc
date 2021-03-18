@@ -50,3 +50,33 @@ const difference = value1 - value2;
     //display solution
 subOutput.textContent = difference;
 });
+
+
+const inputMult1 = document.getElementById('input-MULT1');
+const inputMult2 = document.getElementById('input-MULT2');
+const multButton = document.getElementById('mult-button');
+const multOutput = document.getElementById('mult-output');
+
+multButton.addEventListener('click', () => {
+    const value1 = inputMult1.valueAsNumber;
+    const value2 = inputMult2.valueAsNumber;
+
+const product = value1 * value2;
+
+multOutput.textContent = product;
+});
+
+
+const inputDiv1 = document.getElementById('input-DIV1');
+const inputDiv2 = document.getElementById('input-DIV2');
+const divButton = document.getElementById('div-button');
+const divOutput = document.getElementById('div-output');
+
+divButton.addEventListener('click', () => {
+    const value1 = inputDiv1.valueAsNumber;
+    const value2 = inputDiv2.valueAsNumber;
+
+const quotient = value1 / value2;
+
+divOutput.textContent = quotient;
+});
