@@ -45,3 +45,4 @@ export function handleDivideClick() {
     const quotient = divide(value1, value2);
     divOutput.textContent = quotient;
 }
+
